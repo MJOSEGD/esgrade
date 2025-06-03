@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowDown, CheckCircle, TrendingUp, Shield, FileText, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -41,7 +40,7 @@ const Home = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden esgrade-gradient">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-esg-primary">
         {/* Parallax Background Elements */}
         <div 
           className="absolute inset-0 opacity-10"
