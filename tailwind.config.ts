@@ -53,12 +53,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// ESGrade Custom Colors
-				'esg-dark': '#0F3F2E',
-				'esg-lime': '#B6FF5B',
+				// ESGrade Official Brand Colors
+				'esg-primary': '#1DB584', // Color oficial del logo
+				'esg-primary-dark': '#16A373', // Versión más oscura
+				'esg-primary-light': '#2DC794', // Versión más clara
+				'esg-dark': '#0F3F2E', // Verde oscuro complementario
+				'esg-lime': '#B6FF5B', // Lime accent
+				'esg-teal': '#20B2AA', // Teal complementario
 				'esg-white': '#FFFFFF',
 				'esg-black': '#000000',
 				'esg-gray': '#F5F5F5',
+				'esg-gray-dark': '#4A5568',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -107,6 +112,14 @@ export default {
 					'100%': {
 						width: 'var(--progress-width)'
 					}
+				},
+				'rotate-slow': {
+					'0%': {
+						transform: 'rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg)'
+					}
 				}
 			},
 			animation: {
@@ -114,7 +127,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-up': 'fade-up 0.6s ease-out',
 				'parallax': 'parallax 20s ease-in-out infinite alternate',
-				'progress-bar': 'progress-bar 2s ease-out'
+				'progress-bar': 'progress-bar 2s ease-out',
+				'rotate-slow': 'rotate-slow 20s linear infinite'
 			},
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],

@@ -101,18 +101,26 @@
   }
   
   .btn-primary {
-    @apply bg-esg-lime text-esg-black font-bold py-4 px-8 rounded-none border-2 border-esg-black transition-all duration-300 hover:bg-esg-black hover:text-esg-lime hover:border-esg-lime;
+    @apply bg-esg-primary text-white font-bold py-4 px-8 rounded-none border-2 border-esg-primary transition-all duration-300 hover:bg-esg-primary-dark hover:border-esg-primary-dark;
   }
   
   .btn-secondary {
-    @apply bg-transparent text-esg-lime font-bold py-4 px-8 rounded-none border-2 border-esg-lime transition-all duration-300 hover:bg-esg-lime hover:text-esg-black;
+    @apply bg-transparent text-esg-primary font-bold py-4 px-8 rounded-none border-2 border-esg-primary transition-all duration-300 hover:bg-esg-primary hover:text-white;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent text-esg-gray-dark font-bold py-4 px-8 rounded-none border-2 border-esg-gray-dark transition-all duration-300 hover:bg-esg-gray-dark hover:text-white;
   }
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #0F3F2E 0%, #1a5d3a 50%, #0F3F2E 100%);
+  background: linear-gradient(135deg, #0F3F2E 0%, #1DB584 50%, #0F3F2E 100%);
 }
 
-.lime-gradient {
-  background: linear-gradient(135deg, #B6FF5B 0%, #9EE94D  50%, #B6FF5B 100%);
+.esgrade-gradient {
+  background: linear-gradient(135deg, #1DB584 0%, #2DC794 50%, #1DB584 100%);
+}
+
+.eco-gradient {
+  background: linear-gradient(135deg, #1DB584 0%, #20B2AA 25%, #B6FF5B 75%, #1DB584 100%);
 }
