@@ -41,14 +41,14 @@ const Home = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden esgrade-gradient">
         {/* Parallax Background Elements */}
         <div 
           className="absolute inset-0 opacity-10"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         >
-          <div className="absolute top-20 left-10 w-32 h-32 border-4 border-esg-lime animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-esg-lime opacity-50 rounded-full"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 border-4 border-white animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-white opacity-30 rounded-full"></div>
           <div className="absolute bottom-40 left-1/4 w-16 h-16 border-2 border-white rotate-45"></div>
         </div>
 
@@ -56,25 +56,25 @@ const Home = () => {
           <div className="animate-fade-up">
             <h1 className="brutalist-text text-white mb-8">
               SIN<br />
-              <span className="text-esg-lime">CONSULTORES</span><br />
+              <span className="text-white">CONSULTORES</span><br />
               SIN<br />
-              <span className="text-esg-lime">COMPLICACIONES</span>
+              <span className="text-white">COMPLICACIONES</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
               La única plataforma inteligente que guía a tu pyme paso a paso para obtener 
-              <span className="text-esg-lime font-bold"> tu certificado ESG</span> e 
-              <span className="text-esg-lime font-bold"> informe CSRD</span> de forma autónoma.
+              <span className="text-white font-bold"> tu certificado ESG</span> e 
+              <span className="text-white font-bold"> informe CSRD</span> de forma autónoma.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-              <Link to="/contacto" className="btn-primary text-lg px-12 py-6">
+              <Link to="/contacto" className="bg-white text-esg-primary font-bold py-4 px-8 rounded-none border-2 border-white transition-all duration-300 hover:bg-esg-primary hover:text-white hover:border-esg-primary text-lg px-12 py-6">
                 <span className="flex items-center space-x-2">
                   <Zap className="w-5 h-5" />
                   <span>Empieza Gratis</span>
                 </span>
               </Link>
-              <Link to="/como-funciona" className="btn-secondary text-lg px-12 py-6">
+              <Link to="/como-funciona" className="bg-transparent text-white font-bold py-4 px-8 rounded-none border-2 border-white transition-all duration-300 hover:bg-white hover:text-esg-primary text-lg px-12 py-6">
                 Ver Demo en Vivo
               </Link>
             </div>
@@ -83,10 +83,10 @@ const Home = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-black text-esg-lime mb-2">
+                  <div className="text-3xl md:text-4xl font-black text-white mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-gray-300 font-semibold">
+                  <div className="text-sm text-white/80 font-semibold">
                     {stat.label}
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const Home = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-esg-lime" />
+          <ArrowDown className="w-6 h-6 text-white" />
         </div>
       </section>
 
