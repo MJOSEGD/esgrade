@@ -127,7 +127,7 @@ const Funcionalidades = () => {
               { step: "03", title: "Implementación", desc: "Te guiamos paso a paso hacia tus objetivos", icon: <Zap className="w-8 h-8" /> },
               { step: "04", title: "Certificación", desc: "Obtienes tu certificado ESG oficial", icon: <Shield className="w-8 h-8" /> }
             ].map((item, index) => (
-              <div key={index} className="text-center group cursor-pointer">
+              <div key={index} className="text-center group cursor-pointer relative">
                 <div className="bg-esg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-2xl font-black">{item.step}</span>
                 </div>

@@ -19,7 +19,7 @@ const Footer = () => {
     {
       title: 'Recursos',
       links: [
-        { name: 'Blog', href: '/recursos' },
+        { name: 'Blog', href: '/blog' },
         { name: 'Guías ESG', href: '/recursos' },
         { name: 'CSRD Checklist', href: '/recursos' },
         { name: 'Webinars', href: '/recursos' },
@@ -28,10 +28,10 @@ const Footer = () => {
     {
       title: 'Empresa',
       links: [
-        { name: 'Testimonios', href: '/testimonios' },
-        { name: 'Casos de Éxito', href: '/testimonios' },
+        { name: 'Casos de Éxito', href: '/recursos' },
         { name: 'Partners', href: '/contacto' },
         { name: 'Prensa', href: '/recursos' },
+        { name: 'Carreras', href: '/contacto' },
       ]
     },
     {
@@ -46,23 +46,27 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-esg-dark text-esg-white">
+    <footer className="bg-esg-primary text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-esg-lime border-2 border-esg-lime"></div>
+            <Link to="/" className="flex items-center space-x-3 mb-6">
+              <img 
+                src="/lovable-uploads/316b1e17-6481-4142-8cb2-c4f71588dd98.png" 
+                alt="ESGrade Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="font-black text-2xl">ESGrade®</span>
             </Link>
-            <p className="text-gray-300 mb-6 text-sm leading-relaxed">
+            <p className="text-white/80 mb-6 text-sm leading-relaxed">
               La plataforma inteligente que guía a las pymes paso a paso para obtener 
               su certificado ESG e informe CSRD. Sin consultores, sin complicaciones.
             </p>
             
             {/* Carbon Neutral Badge */}
-            <div className="flex items-center space-x-2 mb-6 p-3 bg-green-800/30 border border-esg-lime rounded-none">
+            <div className="flex items-center space-x-2 mb-6 p-3 bg-white/10 border border-white/20 rounded-none">
               <Leaf className="w-5 h-5 text-esg-lime" />
               <span className="text-sm font-semibold text-esg-lime">
                 Empresa Carbon Neutral
@@ -70,7 +74,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-2 text-sm text-gray-300">
+            <div className="space-y-2 text-sm text-white/70">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
                 <span>hola@esgrade.org</span>
@@ -95,7 +99,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-gray-300 hover:text-esg-lime transition-colors duration-300 text-sm"
+                      className="text-white/70 hover:text-white transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -107,13 +111,13 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
+        <div className="mt-12 pt-8 border-t border-white/20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-black text-xl text-esg-lime mb-2">
                 Mantente al día con ESG
               </h3>
-              <p className="text-gray-300 text-sm">
+              <p className="text-white/70 text-sm">
                 Recibe las últimas actualizaciones sobre CSRD, tendencias ESG y mejores prácticas.
               </p>
             </div>
@@ -121,9 +125,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="tu@email.com"
-                className="flex-1 px-4 py-3 bg-transparent border-2 border-gray-600 text-white placeholder-gray-400 focus:border-esg-lime focus:outline-none"
+                className="flex-1 px-4 py-3 bg-white/10 border-2 border-white/20 text-white placeholder-white/50 focus:border-esg-lime focus:outline-none"
               />
-              <button className="btn-primary whitespace-nowrap">
+              <button className="bg-esg-lime text-esg-gray-dark font-bold py-3 px-6 rounded-none border-2 border-esg-lime transition-all duration-300 hover:bg-white hover:text-esg-primary whitespace-nowrap">
                 Suscribirse
               </button>
             </div>
@@ -132,10 +136,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 py-6">
+      <div className="border-t border-white/20 py-6 bg-esg-gray-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-white/60">
               © {currentYear} ESGrade®. Todos los derechos reservados.
             </div>
             
@@ -143,21 +147,21 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-esg-lime transition-colors duration-300"
+                className="text-white/60 hover:text-esg-lime transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-esg-lime transition-colors duration-300"
+                className="text-white/60 hover:text-esg-lime transition-colors duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-esg-lime transition-colors duration-300"
+                className="text-white/60 hover:text-esg-lime transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -165,7 +169,7 @@ const Footer = () => {
             </div>
 
             {/* Language Toggle */}
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-white/60">
               <button className="hover:text-esg-lime transition-colors duration-300">
                 ES
               </button>
