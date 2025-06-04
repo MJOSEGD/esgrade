@@ -8,6 +8,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ComoFunciona from "./pages/ComoFunciona";
+import Funcionalidades from "./pages/Funcionalidades";
+import Precios from "./pages/Precios";
+import Recursos from "./pages/Recursos";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,13 +28,12 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/como-funciona" element={<ComoFunciona />} />
-              {/* TODO: Add remaining pages */}
-              <Route path="/funcionalidades" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Funcionalidades - Coming Soon</h1></div>} />
-              <Route path="/precios" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Precios - Coming Soon</h1></div>} />
-              <Route path="/testimonios" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Testimonios - Coming Soon</h1></div>} />
-              <Route path="/recursos" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Recursos - Coming Soon</h1></div>} />
-              <Route path="/contacto" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Contacto - Coming Soon</h1></div>} />
-              <Route path="/legal" element={<div className="min-h-screen pt-20 flex items-center justify-center"><h1 className="text-4xl font-black">Legal - Coming Soon</h1></div>} />
+              <Route path="/funcionalidades" element={<Funcionalidades />} />
+              <Route path="/precios" element={<Precios />} />
+              <Route path="/recursos" element={<Recursos />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contacto" element={<div className="min-h-screen pt-20 flex items-center justify-center bg-esg-gray-dark text-white"><h1 className="text-4xl font-black">Contacto - Coming Soon</h1></div>} />
+              <Route path="/legal" element={<div className="min-h-screen pt-20 flex items-center justify-center bg-esg-gray-dark text-white"><h1 className="text-4xl font-black">Legal - Coming Soon</h1></div>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

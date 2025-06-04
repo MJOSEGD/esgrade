@@ -12,8 +12,8 @@ const Navbar = () => {
     { name: 'Cómo Funciona', href: '/como-funciona' },
     { name: 'Funcionalidades', href: '/funcionalidades' },
     { name: 'Precios', href: '/precios' },
-    { name: 'Testimonios', href: '/testimonios' },
     { name: 'Recursos', href: '/recursos' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contacto', href: '/contacto' },
   ];
 
@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-esg-white/95 backdrop-blur-md border-b-2 border-esg-primary z-50">
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b-2 border-esg-primary z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -81,7 +81,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-esg-white border-t-2 border-esg-primary">
+        <div className="lg:hidden bg-white border-t-2 border-esg-primary">
           <div className="px-4 py-6 space-y-4">
             {menuItems.map((item) => (
               <Link
