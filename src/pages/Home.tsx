@@ -136,14 +136,22 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right side visual element */}
+            {/* Right side visual element with ESGrade logo */}
             <div className="relative">
               <div className="w-full h-96 bg-gradient-to-br from-esg-primary to-esg-lime rounded-none transform rotate-3 hover:rotate-6 transition-transform duration-500" />
-              <div className="absolute inset-0 w-full h-96 bg-esg-gray-dark border-4 border-esg-primary transform -rotate-3 hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
-                <div className="text-center space-y-4">
+              <div className="absolute inset-0 w-full h-96 bg-white border-4 border-esg-primary transform -rotate-3 hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
+                <div className="text-center space-y-6 p-8">
+                  {/* ESGrade Logo */}
+                  <div className="mb-6">
+                    <img 
+                      src="/lovable-uploads/cb82e56e-da10-4270-9673-d4b2994d4ce5.png" 
+                      alt="ESGrade Logo" 
+                      className="w-32 h-auto mx-auto"
+                    />
+                  </div>
                   <Shield className="w-16 h-16 text-esg-primary mx-auto" />
-                  <h3 className="text-2xl font-black text-white">Certificación ESG</h3>
-                  <p className="text-esg-lime font-bold">100% Automatizada</p>
+                  <h3 className="text-2xl font-black text-esg-gray-dark">Certificación ESG</h3>
+                  <p className="text-esg-primary font-bold text-lg">100% Automatizada</p>
                 </div>
               </div>
             </div>
