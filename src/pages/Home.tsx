@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, Shield, TrendingUp, FileText, CheckCircle, Play, Zap, BarChart3, Users, Eye, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -144,12 +143,11 @@ const Home = () => {
                   {/* ESGrade Logo */}
                   <div className="mb-6">
                     <img 
-                      src="/lovable-uploads/cb82e56e-da10-4270-9673-d4b2994d4ce5.png" 
+                      src="/lovable-uploads/e8d05bf0-fda8-4a35-9fde-7dcd1bcec0c7.png" 
                       alt="ESGrade Logo" 
-                      className="w-32 h-auto mx-auto"
+                      className="w-40 h-auto mx-auto"
                     />
                   </div>
-                  <Shield className="w-16 h-16 text-esg-primary mx-auto" />
                   <h3 className="text-2xl font-black text-esg-gray-dark">Certificación ESG</h3>
                   <p className="text-esg-primary font-bold text-lg">100% Automatizada</p>
                 </div>
