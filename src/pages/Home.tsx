@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, Shield, TrendingUp, FileText, CheckCircle, Play, Zap, BarChart3, Users, Eye, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -15,49 +16,49 @@ const Home = () => {
   }, []);
 
   const stats = [
-    { value: 'IA', label: 'Diagnóstico ESG' },
-    { value: 'CSRD', label: 'Informes Automáticos' },
-    { value: '5x', label: 'Más Rápido' },
+    { value: 'IA', label: 'Diagnóstico ESG Automatizado' },
+    { value: 'CSRD', label: 'Informes Conformes UE' },
+    { value: '90%', label: 'Menos Tiempo vs Consultorías' },
   ];
 
   const features = [
     {
       icon: <Shield className="w-12 h-12" />,
-      title: "Certificación ESG Automatizada",
-      description: "Obtén tu certificado ESG oficial siguiendo nuestra metodología probada paso a paso",
-      highlights: ["Proceso guiado", "100% digital", "Certificado oficial"]
+      title: "Certificación ESG Oficial Automatizada",
+      description: "Obtén tu certificado ESG reconocido internacionalmente siguiendo nuestra metodología validada por auditores ESG certificados",
+      highlights: ["Proceso 100% automatizado", "Certificado reconocido internacionalmente", "Metodología validada por auditores"]
     },
     {
       icon: <TrendingUp className="w-12 h-12" />,
-      title: "Dashboard Inteligente",
-      description: "Monitorea todos tus KPIs ESG en tiempo real con análisis predictivo",
-      highlights: ["Métricas en vivo", "Análisis predictivo", "Alertas automáticas"]
+      title: "Dashboard ESG Inteligente con IA",
+      description: "Monitoriza todos tus KPIs de sostenibilidad en tiempo real con análisis predictivo e indicadores de riesgo automáticos",
+      highlights: ["200+ métricas ESG automatizadas", "Análisis predictivo con IA", "Alertas de cumplimiento en tiempo real"]
     },
     {
       icon: <FileText className="w-12 h-12" />,
-      title: "Informe CSRD Automático",
-      description: "Genera tu informe de sostenibilidad conforme a la normativa CSRD europea",
-      highlights: ["Cumplimiento CSRD", "Generación automática", "Exportación PDF"]
+      title: "Informe CSRD Automático Conforme UE",
+      description: "Genera automáticamente tu informe de sostenibilidad que cumple al 100% con la Directiva CSRD de la Unión Europea",
+      highlights: ["100% conforme CSRD", "Generación automática", "Validación legal incluida"]
     },
     {
       icon: <BarChart3 className="w-12 h-12" />,
-      title: "Análisis de Riesgos",
-      description: "Identifica y gestiona riesgos ESG con nuestro sistema de evaluación avanzado",
-      highlights: ["Detección temprana", "Matriz de riesgos", "Plan de mitigación"]
+      title: "Gestión de Riesgos ESG Avanzada",
+      description: "Sistema de evaluación de riesgos ESG que identifica amenazas de sostenibilidad antes de que impacten en tu negocio",
+      highlights: ["Detección temprana de riesgos", "Matriz de materialidad automática", "Planes de mitigación personalizados"]
     },
   ];
 
   const testimonials = [
     {
-      quote: "ESGrade ha transformado nuestra estrategia ESG. Ahora podemos medir y comunicar nuestro impacto de manera efectiva.",
-      author: "Juan Pérez, CEO de EcoTech",
-      company: "EcoTech",
+      quote: "ESGrade redujo nuestro tiempo de certificación ESG de 8 meses a 6 semanas. Ahora tenemos nuestro certificado oficial y cumplimos con CSRD sin contratar consultores externos.",
+      author: "Carlos Mendoza, CEO",
+      company: "TechSolutions Madrid",
       image: "/lovable-uploads/team-01.jpg"
     },
     {
-      quote: "La plataforma es intuitiva y fácil de usar. Nos ha ahorrado tiempo y recursos en la elaboración de informes CSRD.",
-      author: "María García, Directora de Sostenibilidad",
-      company: "Green Solutions",
+      quote: "La plataforma nos ahorró más de 50.000€ en consultorías ESG. El dashboard automatizado nos permite monitorizar nuestro impacto ambiental y social en tiempo real.",
+      author: "Ana Ruiz, Directora de Sostenibilidad",
+      company: "EcoManufacturing",
       image: "/lovable-uploads/team-02.jpg"
     },
   ];
@@ -91,19 +92,18 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="inline-block px-4 py-2 bg-esg-primary/20 border border-esg-primary rounded-none text-esg-lime text-sm font-bold">
-                  PLATAFORMA LÍDER ESG
+                  CERTIFICACIÓN ESG OFICIAL SIN CONSULTORES
                 </div>
                 <h1 className="text-5xl md:text-7xl font-black leading-tight">
                   CERTIFICA TU
-                  <span className="block text-esg-primary glitch" data-text="SOSTENIBILIDAD">
-                    SOSTENIBILIDAD
+                  <span className="block text-esg-primary glitch" data-text="ESG Y CSRD">
+                    ESG Y CSRD
                   </span>
-                  <span className="block text-esg-lime">SIN CONSULTORES</span>
+                  <span className="block text-esg-lime">AUTOMÁTICAMENTE</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-                  La primera plataforma que guía a las pymes paso a paso para obtener 
-                  su <span className="text-esg-primary font-bold">certificado ESG</span> e 
-                  <span className="text-esg-lime font-bold"> informe CSRD</span> automáticamente.
+                  La única plataforma que automatiza completamente tu <span className="text-esg-primary font-bold">certificación ESG oficial</span> e 
+                  <span className="text-esg-lime font-bold"> informe CSRD conforme a la UE</span>. Diseñada para pymes que buscan sostenibilidad real sin consultorías costosas.
                 </p>
               </div>
 
@@ -112,12 +112,12 @@ const Home = () => {
                   to="/contacto" 
                   className="group btn-primary inline-flex items-center space-x-2 pulse-glow"
                 >
-                  <span>Demo Gratuita</span>
+                  <span>Empezar Certificación Gratis</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <button className="group btn-secondary inline-flex items-center space-x-2">
                   <Play className="w-5 h-5" />
-                  <span>Ver Cómo Funciona</span>
+                  <span>Ver Demo ESG</span>
                 </button>
               </div>
 
@@ -142,7 +142,7 @@ const Home = () => {
               <div className="absolute inset-0 w-full h-96 bg-esg-gray-dark border-4 border-esg-primary transform -rotate-3 hover:rotate-0 transition-transform duration-500 flex items-center justify-center">
                 <div className="text-center space-y-4">
                   <Shield className="w-16 h-16 text-esg-primary mx-auto" />
-                  <h3 className="text-2xl font-black text-white">Certificación</h3>
+                  <h3 className="text-2xl font-black text-white">Certificación ESG</h3>
                   <p className="text-esg-lime font-bold">100% Automatizada</p>
                 </div>
               </div>
@@ -156,10 +156,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-esg-gray-dark mb-6">
-              TRANSFORMA TU EMPRESA CON <span className="text-esg-primary">NUESTRAS</span>
+              TECNOLOGÍA ESG <span className="text-esg-primary">LÍDER EN AUTOMATIZACIÓN</span>
             </h2>
             <p className="text-xl text-esg-gray-dark max-w-3xl mx-auto">
-              Funcionalidades diseñadas para impulsar tu estrategia ESG
+              Funcionalidades avanzadas que convierten la sostenibilidad en ventaja competitiva
             </p>
           </div>
 
@@ -197,10 +197,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              CÓMO <span className="text-esg-primary">FUNCIONA</span>
+              CERTIFICACIÓN ESG EN <span className="text-esg-primary">3 PASOS AUTOMÁTICOS</span>
             </h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              La certificación ESG en 3 pasos simples
+              De diagnóstico a certificación oficial ESG en semanas, no meses
             </p>
           </div>
 
@@ -211,8 +211,8 @@ const Home = () => {
                 <span className="text-3xl font-black">01</span>
               </div>
               <TrendingUp className="text-esg-primary w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Diagnóstico ESG</h3>
-              <p className="text-gray-300">Evaluamos tu situación actual con IA</p>
+              <h3 className="text-xl font-bold mb-2">Diagnóstico ESG Automatizado</h3>
+              <p className="text-gray-300">IA evalúa tu situación actual ESG en 200+ criterios internacionales</p>
             </div>
 
             {/* Step 2 */}
@@ -221,8 +221,8 @@ const Home = () => {
                 <span className="text-3xl font-black">02</span>
               </div>
               <FileText className="text-esg-primary w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Plan de Acción</h3>
-              <p className="text-gray-300">Creamos tu hoja de ruta personalizada</p>
+              <h3 className="text-xl font-bold mb-2">Plan de Acción ESG Personalizado</h3>
+              <p className="text-gray-300">Roadmap específico para tu sector con tareas priorizadas</p>
             </div>
 
             {/* Step 3 */}
@@ -231,8 +231,8 @@ const Home = () => {
                 <span className="text-3xl font-black">03</span>
               </div>
               <Award className="text-esg-primary w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Certificación</h3>
-              <p className="text-gray-300">Obtén tu certificado ESG oficial</p>
+              <h3 className="text-xl font-bold mb-2">Certificación ESG Oficial + CSRD</h3>
+              <p className="text-gray-300">Certificado reconocido + informe CSRD conforme UE automático</p>
             </div>
           </div>
         </div>
@@ -243,10 +243,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-esg-gray-dark mb-6">
-              LO QUE DICEN <span className="text-esg-primary">NUESTROS CLIENTES</span>
+              CASOS DE ÉXITO <span className="text-esg-primary">CERTIFICACIONES ESG</span>
             </h2>
             <p className="text-xl text-esg-gray-dark max-w-3xl mx-auto">
-              Más de 500 empresas ya confían en ESGrade
+              Empresas que ya transformaron su sostenibilidad con ESGrade
             </p>
           </div>
 
@@ -275,16 +275,16 @@ const Home = () => {
       <section className="section-padding bg-esg-primary text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            ¿LISTO PARA EMPEZAR?
+            ¿LISTO PARA TU CERTIFICACIÓN ESG?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Únete a más de 500 empresas que ya transformaron su estrategia ESG
+            Únete a las empresas que ya obtuvieron su certificado ESG oficial sin consultores
           </p>
           <Link 
             to="/contacto" 
             className="btn-primary inline-block"
           >
-            Demo Gratuita
+            Empezar Certificación Gratis
           </Link>
         </div>
       </section>
