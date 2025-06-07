@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Check, X, Zap, Crown, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -73,7 +74,7 @@ const Precios = () => {
   return (
     <div className="min-h-screen pt-20 bg-white">
       {/* Hero Section */}
-      <section className="bg-slate-700 text-white py-20">
+      <section className="bg-esg-gray-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-black mb-6">
             PRECIOS <span className="text-esg-primary">TRANSPARENTES</span>
@@ -181,7 +182,7 @@ const Precios = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-700 text-white">
+      <section className="py-20 bg-esg-gray-dark text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-black text-center mb-16">
             PREGUNTAS <span className="text-esg-primary">FRECUENTES</span>

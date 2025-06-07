@@ -44,10 +44,6 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-
-    /* New header color - blue-gray */
-    --header-primary: 210 20% 40%;
-    --header-primary-dark: 210 25% 35%;
   }
 
   .dark {
