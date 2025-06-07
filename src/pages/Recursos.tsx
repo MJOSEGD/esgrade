@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Calendar, User, ArrowRight, Filter, Search, BookOpen, FileText, Video } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -113,7 +112,7 @@ const Recursos = () => {
   return (
     <div className="min-h-screen pt-20 bg-white">
       {/* Hero Section */}
-      <section className="bg-esg-gray-dark text-white py-20">
+      <section className="bg-slate-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-black mb-6">
             RECURSOS <span className="text-esg-primary">ESG</span>

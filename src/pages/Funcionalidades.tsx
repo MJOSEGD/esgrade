@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, TrendingUp, FileText, BarChart3, Users, Zap, Eye, CheckCircle, ArrowRight, Sparkles, Star, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -53,7 +52,7 @@ const Funcionalidades = () => {
     <div className="min-h-screen pt-20 bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-esg-primary via-blue-600 to-purple-600"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-600 via-slate-700 to-slate-800"></div>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
