@@ -71,8 +71,6 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["Todas", "Tendencias", "Normativas", "Estrategia", "Reporting", "Tecnología", "Casos de Éxito"];
-
   const filteredPosts = posts.filter(post =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -80,27 +78,25 @@ const Blog = () => {
   );
 
   return (
-    <div className="min-h-screen pt-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen pt-20 bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600/20 via-transparent to-green-500/20" />
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-green-500/10 rounded-full blur-3xl" />
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-esg-primary rounded-full blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-esg-primary rounded-full blur-3xl" />
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <Sparkles className="w-8 h-8 text-blue-400 animate-pulse" />
-              <span className="text-blue-400 font-semibold text-lg tracking-wide">BLOG ESPECIALIZADO</span>
-              <Sparkles className="w-8 h-8 text-blue-400 animate-pulse" />
+            <div className="flex items-center justify-center space-x-2 mb-8">
+              <Sparkles className="w-8 h-8 text-esg-primary" />
+              <span className="text-esg-primary font-semibold text-lg tracking-wide">BLOG ESPECIALIZADO</span>
+              <Sparkles className="w-8 h-8 text-esg-primary" />
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black mb-8 bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-7xl font-black mb-8 text-white leading-tight">
               INSIGHTS ESG
-              <span className="block text-4xl md:text-5xl text-blue-400 mt-4">
+              <span className="block text-4xl md:text-5xl text-esg-primary mt-4">
                 & SOSTENIBILIDAD
               </span>
             </h1>
@@ -110,31 +106,25 @@ const Blog = () => {
               en sostenibilidad empresarial y gestión ESG
             </p>
             
-            {/* Enhanced Search */}
-            <div className="relative max-w-2xl mx-auto group">
-              <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-slate-400 w-6 h-6 transition-colors group-focus-within:text-blue-500" />
+            <div className="relative max-w-2xl mx-auto">
+              <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-slate-400 w-6 h-6" />
               <input
                 type="text"
                 placeholder="Buscar artículos, tendencias, guías..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-16 pr-8 py-6 text-lg text-slate-700 bg-white/95 backdrop-blur-sm border-2 border-white/20 rounded-2xl focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 transition-all duration-300 shadow-2xl"
+                className="w-full pl-16 pr-8 py-6 text-lg text-slate-700 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-esg-primary focus:ring-4 focus:ring-esg-primary/20 transition-all duration-300 shadow-lg"
               />
-              <div className="absolute right-6 top-1/2 transform -translate-y-1/2">
-                <kbd className="px-3 py-1 text-xs font-semibold text-slate-500 bg-slate-100 border border-slate-300 rounded-lg">
-                  Enter
-                </kbd>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Featured Post */}
-      <section className="py-24 relative">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-12">
-            <div className="p-3 bg-gradient-to-r from-blue-500 to-green-500 rounded-xl">
+            <div className="p-3 bg-esg-primary rounded-xl">
               <TrendingUp className="w-8 h-8 text-white" />
             </div>
             <div>
@@ -143,10 +133,8 @@ const Blog = () => {
             </div>
           </div>
           
-          <article className="group relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200/50 hover:shadow-3xl transition-all duration-700 hover:-translate-y-2">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 relative">
+          <article className="group relative bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative overflow-hidden h-80 lg:h-auto">
                 <img 
                   src={featuredPost.image} 
@@ -155,21 +143,21 @@ const Blog = () => {
                 />
                 <div className="absolute top-6 left-6">
                   <div className="flex items-center space-x-2">
-                    <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    <span className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                    <Star className="w-5 h-5 text-esg-primary fill-current" />
+                    <span className="bg-esg-primary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                       DESTACADO
                     </span>
                   </div>
                 </div>
                 <div className="absolute bottom-6 left-6">
-                  <span className="bg-white/90 backdrop-blur-sm text-slate-800 px-4 py-2 rounded-full text-sm font-bold border border-white/20">
+                  <span className="bg-white/90 backdrop-blur-sm text-slate-800 px-4 py-2 rounded-full text-sm font-bold">
                     {featuredPost.category}
                   </span>
                 </div>
               </div>
               
-              <div className="p-8 lg:p-12 flex flex-col justify-center relative">
-                <h3 className="text-3xl lg:text-4xl font-black text-slate-800 mb-6 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-green-600 group-hover:bg-clip-text transition-all duration-500">
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 className="text-3xl lg:text-4xl font-black text-slate-800 mb-6 group-hover:text-esg-primary transition-colors duration-300">
                   {featuredPost.title}
                 </h3>
                 
@@ -180,7 +168,7 @@ const Blog = () => {
                 <div className="flex items-center justify-between text-sm text-slate-500 mb-8">
                   <div className="flex items-center space-x-6">
                     <div className="flex items-center space-x-2">
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 bg-esg-primary rounded-full flex items-center justify-center">
                         <User className="w-4 h-4 text-white" />
                       </div>
                       <span className="font-semibold">{featuredPost.author}</span>
@@ -197,7 +185,7 @@ const Blog = () => {
                 
                 <Link 
                   to={`/blog/${featuredPost.id}`}
-                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold text-lg px-8 py-4 rounded-xl hover:from-blue-700 hover:to-green-700 transition-all duration-300 group-hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center space-x-3 bg-esg-primary text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-esg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <span>Leer artículo completo</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -209,11 +197,11 @@ const Blog = () => {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-24 bg-white/50 backdrop-blur-sm">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-slate-800 mb-6">
-              ÚLTIMOS <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">ARTÍCULOS</span>
+              ÚLTIMOS <span className="text-esg-primary">ARTÍCULOS</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Mantente al día con las últimas tendencias y mejores prácticas en ESG
@@ -224,8 +212,7 @@ const Blog = () => {
             {filteredPosts.map((post, index) => (
               <article 
                 key={post.id}
-                className="group bg-white rounded-2xl shadow-xl border border-slate-200/50 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
               >
                 <div className="relative overflow-hidden h-48">
                   <img 
@@ -233,7 +220,6 @@ const Blog = () => {
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/90 backdrop-blur-sm text-slate-800 px-3 py-1 rounded-full text-sm font-bold">
                       {post.category}
@@ -242,7 +228,7 @@ const Blog = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-black text-slate-800 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-green-600 group-hover:bg-clip-text transition-all duration-300 line-clamp-2">
+                  <h3 className="text-xl font-black text-slate-800 mb-3 group-hover:text-esg-primary transition-colors duration-300 line-clamp-2">
                     {post.title}
                   </h3>
                   
@@ -253,7 +239,7 @@ const Blog = () => {
                   <div className="flex items-center justify-between text-sm text-slate-500 mb-6">
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center space-x-2">
-                        <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center">
+                        <div className="w-6 h-6 bg-esg-primary rounded-full flex items-center justify-center">
                           <User className="w-3 h-3 text-white" />
                         </div>
                         <span className="font-medium">{post.author}</span>
@@ -270,7 +256,7 @@ const Blog = () => {
                   
                   <Link 
                     to={`/blog/${post.id}`}
-                    className="inline-flex items-center space-x-2 text-blue-600 font-bold hover:text-green-600 transition-colors group-hover:translate-x-1 transition-transform duration-300"
+                    className="inline-flex items-center space-x-2 text-esg-primary font-bold hover:text-esg-primary-dark transition-colors"
                   >
                     <span>Leer más</span>
                     <ArrowRight className="w-4 h-4" />
@@ -293,21 +279,16 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-24 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-500/20 rounded-full blur-3xl" />
-        </div>
-        
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20 mb-6">
-              <Sparkles className="w-5 h-5 text-blue-400" />
-              <span className="text-sm font-semibold text-blue-100">NEWSLETTER EXCLUSIVO</span>
+              <Sparkles className="w-5 h-5 text-esg-primary" />
+              <span className="text-sm font-semibold text-esg-primary">NEWSLETTER EXCLUSIVO</span>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              NO TE PIERDAS <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">NADA</span>
+              NO TE PIERDAS <span className="text-esg-primary">NADA</span>
             </h2>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               Recibe semanalmente los mejores contenidos ESG, análisis exclusivos y 
@@ -319,9 +300,9 @@ const Blog = () => {
             <input
               type="email"
               placeholder="tu@email.com"
-              className="flex-1 px-6 py-4 text-slate-700 bg-white/95 backdrop-blur-sm border-2 border-white/20 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 transition-all duration-300"
+              className="flex-1 px-6 py-4 text-slate-700 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-esg-primary focus:ring-4 focus:ring-esg-primary/20 transition-all duration-300"
             />
-            <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold px-8 py-4 rounded-xl hover:from-blue-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+            <button className="bg-esg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-esg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl">
               Suscribirse
             </button>
           </div>
