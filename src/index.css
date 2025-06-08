@@ -84,7 +84,6 @@
 
   body {
     @apply bg-background text-foreground font-inter;
-    cursor: none; /* Hide default cursor for custom cursor effect */
   }
 }
 
@@ -217,11 +216,6 @@
 
 .eco-gradient {
   background: linear-gradient(135deg, #1DB584 0%, #20B2AA 25%, #B6FF5B 75%, #1DB584 100%);
-}
-
-/* Reveal cursor effect */
-body * {
-  cursor: none !important;
 }
 
 /* Custom scrollbar */
