@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, Shield, TrendingUp, FileText, CheckCircle, Play, Zap, BarChart3, Users, Eye, Award, Star, Quote } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -104,7 +103,7 @@ const Home = () => {
                   <span className="text-esg-lime text-sm font-bold tracking-wider">CERTIFICACIÓN ESG OFICIAL SIN CONSULTORES</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-black leading-tight">
                   <span className="block text-white">CERTIFICA TU</span>
                   <span className="block bg-gradient-to-r from-esg-primary to-esg-lime bg-clip-text text-transparent">
                     ESG Y CSRD
