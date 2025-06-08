@@ -83,9 +83,9 @@ const Home = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-esg-teal/10 to-esg-primary/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
       </div>
 
-      {/* Hero Section - Enhanced */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-esg-gray-dark via-esg-dark to-esg-gray-dark text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-esg-gray-dark/95 via-esg-dark/90 to-esg-gray-dark/95" />
+      {/* Hero Section - Fixed overlap issue */}
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95" />
         
         {/* Hero Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -96,7 +96,7 @@ const Home = () => {
         </div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-20 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-esg-primary/20 to-esg-lime/20 border border-esg-primary/30 rounded-full backdrop-blur-sm">
@@ -104,7 +104,7 @@ const Home = () => {
                   <span className="text-esg-lime text-sm font-bold tracking-wider">CERTIFICACIÓN ESG OFICIAL SIN CONSULTORES</span>
                 </div>
                 
-                <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
                   <span className="block text-white">CERTIFICA TU</span>
                   <span className="block bg-gradient-to-r from-esg-primary to-esg-lime bg-clip-text text-transparent">
                     ESG Y CSRD
@@ -112,13 +112,13 @@ const Home = () => {
                   <span className="block text-esg-lime">AUTOMÁTICAMENTE</span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+                <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
                   La única plataforma que automatiza completamente tu <span className="text-esg-primary font-semibold">certificación ESG oficial</span> e 
                   <span className="text-esg-lime font-semibold"> informe CSRD conforme a la UE</span>. Diseñada para empresas que buscan sostenibilidad real sin consultorías costosas.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Link 
                   to="/contacto" 
                   className="group inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-esg-primary to-esg-primary-dark text-white font-bold py-4 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-esg-primary/25"
@@ -152,26 +152,28 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Enhanced Certification Card */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-esg-primary to-esg-lime rounded-3xl transform rotate-3 hover:rotate-6 transition-transform duration-700 opacity-80" />
-              <div className="relative bg-white/95 backdrop-blur-sm border-2 border-esg-primary/20 transform -rotate-3 hover:rotate-0 transition-transform duration-700 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-esg-primary/5" />
-                <div className="relative p-12 text-center space-y-6">
-                  <div className="mb-8">
-                    <img 
-                      src="/lovable-uploads/e8d05bf0-fda8-4a35-9fde-7dcd1bcec0c7.png" 
-                      alt="ESGrade Logo" 
-                      className="w-48 h-auto mx-auto drop-shadow-lg"
-                    />
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="text-3xl font-black text-esg-gray-dark">Certificación ESG</h3>
-                    <p className="text-esg-primary font-bold text-xl">100% Automatizada</p>
-                    <div className="inline-flex items-center space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-esg-lime fill-current" />
-                      ))}
+            {/* Enhanced Certification Card - Moved to right and improved spacing */}
+            <div className="relative flex justify-center xl:justify-end">
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-gradient-to-br from-esg-primary to-esg-lime rounded-3xl transform rotate-3 hover:rotate-6 transition-transform duration-700 opacity-80" />
+                <div className="relative bg-white/95 backdrop-blur-sm border-2 border-esg-primary/20 transform -rotate-3 hover:rotate-0 transition-transform duration-700 rounded-3xl shadow-2xl overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-esg-primary/5" />
+                  <div className="relative p-12 text-center space-y-6">
+                    <div className="mb-8">
+                      <img 
+                        src="/lovable-uploads/e8d05bf0-fda8-4a35-9fde-7dcd1bcec0c7.png" 
+                        alt="ESGrade Logo" 
+                        className="w-48 h-auto mx-auto drop-shadow-lg"
+                      />
+                    </div>
+                    <div className="space-y-4">
+                      <h3 className="text-3xl font-black text-slate-800">Certificación ESG</h3>
+                      <p className="text-esg-primary font-bold text-xl">100% Automatizada</p>
+                      <div className="inline-flex items-center space-x-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 text-esg-lime fill-current" />
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
