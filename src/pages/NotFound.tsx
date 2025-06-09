@@ -25,9 +25,9 @@ const NotFound = () => {
         {/* Canonical for 404 pages */}
         <link rel="canonical" href="https://esgrade.org/404" />
         
-        {/* Language alternatives */}
-        <link rel="alternate" hreflang="es" href="https://esgrade.org/404" />
-        <link rel="alternate" hreflang="es-ES" href="https://esgrade.org/404" />
+        {/* Language alternatives - Fixed hrefLang */}
+        <link rel="alternate" hrefLang="es" href="https://esgrade.org/404" />
+        <link rel="alternate" hrefLang="es-ES" href="https://esgrade.org/404" />
         
         {/* JSON-LD for WebPage */}
         <script type="application/ld+json">
