@@ -16,10 +16,35 @@ const NotFound = () => {
         <meta property="og:title" content="Página No Encontrada - Error 404 | ESGrade®" />
         <meta property="og:description" content="La página que buscas no existe en ESGrade®. Regresa a nuestro sitio principal." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://esgrade.org/404" />
         
         {/* Twitter */}
         <meta name="twitter:title" content="Página No Encontrada - ESGrade®" />
         <meta name="twitter:description" content="La página que buscas no existe en ESGrade®" />
+        
+        {/* Canonical for 404 pages */}
+        <link rel="canonical" href="https://esgrade.org/404" />
+        
+        {/* Language alternatives */}
+        <link rel="alternate" hreflang="es" href="https://esgrade.org/404" />
+        <link rel="alternate" hreflang="es-ES" href="https://esgrade.org/404" />
+        
+        {/* JSON-LD for WebPage */}
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Página No Encontrada - Error 404",
+          "description": "La página solicitada no existe",
+          "url": "https://esgrade.org/404",
+          "inLanguage": "es-ES",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "ESGrade",
+            "url": "https://esgrade.org"
+          }
+        })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen pt-20 bg-white flex items-center justify-center">
@@ -70,7 +95,7 @@ const NotFound = () => {
             </Link>
           </div>
 
-          {/* Popular Pages */}
+          {/* Popular Pages with schema markup */}
           <div className="bg-slate-50 p-8 rounded-2xl">
             <h2 className="text-2xl font-black text-esg-gray-dark mb-6">
               Páginas Populares

@@ -9,6 +9,13 @@
     <meta name="author" content="ESGrade" />
     <meta name="keywords" content="certificación ESG, CSRD automatico, informe sostenibilidad, ESG PYME, certificado ESG oficial, plataforma ESG, taxonomía europea, SFDR, doble materialidad" />
 
+    <!-- Core Web Vitals optimization -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://esgrade.org/" />
@@ -27,6 +34,11 @@
     <meta name="twitter:site" content="@esgrade" />
     <meta name="twitter:creator" content="@esgrade" />
 
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="es" href="https://esgrade.org/" />
+    <link rel="alternate" hreflang="es-ES" href="https://esgrade.org/" />
+    <link rel="alternate" hreflang="x-default" href="https://esgrade.org/" />
+
     <!-- Additional SEO Meta Tags -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
@@ -41,11 +53,6 @@
     <meta name="geo.region" content="ES" />
     <meta name="geo.placename" content="España" />
     
-    <!-- Language alternatives -->
-    <link rel="alternate" hreflang="es" href="https://esgrade.org/" />
-    <link rel="alternate" hreflang="es-ES" href="https://esgrade.org/" />
-    <link rel="alternate" hreflang="x-default" href="https://esgrade.org/" />
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
@@ -54,30 +61,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://images.unsplash.com">
     
-    <!-- JSON-LD Structured Data -->
+    <!-- Enhanced JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "ESGrade",
-      "description": "Plataforma líder en certificación ESG automática para PYMEs. Obtén tu certificado ESG oficial e informe CSRD conforme UE.",
-      "url": "https://esgrade.org",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "description": "Diagnóstico ESG gratuito"
-      },
-      "creator": {
-        "@type": "Organization",
-        "name": "ESGrade",
-        "url": "https://esgrade.org"
-      },
-      "keywords": "certificación ESG, CSRD automático, informe sostenibilidad, ESG PYME"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://esgrade.org/#organization",
+          "name": "ESGrade",
+          "url": "https://esgrade.org",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lovable.dev/opengraph-image-p98pqg.png"
+          },
+          "description": "Plataforma líder en certificación ESG automática para PYMEs",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ES"
+          },
+          "sameAs": [
+            "https://twitter.com/esgrade",
+            "https://linkedin.com/company/esgrade"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://esgrade.org/#website",
+          "url": "https://esgrade.org",
+          "name": "ESGrade",
+          "description": "Certificación ESG Automática Sin Consultores",
+          "publisher": {
+            "@id": "https://esgrade.org/#organization"
+          },
+          "inLanguage": "es-ES"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "ESGrade",
+          "description": "Plataforma líder en certificación ESG automática para PYMEs. Obtén tu certificado ESG oficial e informe CSRD conforme UE.",
+          "url": "https://esgrade.org",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "description": "Diagnóstico ESG gratuito"
+          },
+          "creator": {
+            "@id": "https://esgrade.org/#organization"
+          },
+          "keywords": "certificación ESG, CSRD automático, informe sostenibilidad, ESG PYME",
+          "featureList": [
+            "Diagnóstico ESG automático",
+            "Certificación ESG oficial",
+            "Informe CSRD conforme UE",
+            "Dashboard en tiempo real",
+            "Soporte 24/7"
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Certificación ESG Automática",
+          "description": "Servicio de certificación ESG completamente automatizado para empresas",
+          "provider": {
+            "@id": "https://esgrade.org/#organization"
+          },
+          "serviceType": "Consultoría ESG",
+          "areaServed": "España",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios ESGrade",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Diagnóstico ESG Gratuito"
+                }
+              },
+              {
+                "@type": "Offer", 
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Certificación ESG Oficial"
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
     </script>
+
+    <!-- Performance optimization -->
+    <link rel="prefetch" href="/como-funciona" />
+    <link rel="prefetch" href="/funcionalidades" />
+    <link rel="prefetch" href="/precios" />
   </head>
 
   <body>
