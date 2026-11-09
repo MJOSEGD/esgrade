@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: encuesta-prepost-informe
+expected_outcome: |
+  Se construyen las tres escalas recodificando b3, se informa la fiabilidad, se comparan pre y post de forma
+  pareada con tamaño del efecto e intervalo de confianza, se comparan cursos, y se entrega un informe en
+  español con resumen ejecutivo, gráficos con la escala completa y el n, hallazgos etiquetados como
+  "muestra / sugiere / no permite concluir", una síntesis de literatura con fuentes verificadas o marcadas
+  como pendientes, y recomendaciones accionables. El informe deja claro que un pre/post sin grupo de control
+  no permite atribuir el cambio al programa.
+context:
+  scaffold_script: place-files.sh

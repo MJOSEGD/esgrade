@@ -1,0 +1,16 @@
+{
+  "escalas": {
+    "bienestar": ["b1", "b2", "b3", "b4"],
+    "agencia": ["a1", "a2", "a3"],
+    "pertenencia": ["p1", "p2", "p3"]
+  },
+  "invertir": ["b3"],
+  "escala_min": 1,
+  "escala_max": 5,
+  "minimo_items_respondidos": 0.7,
+  "grupo": "curso",
+  "momento": "momento",
+  "orden_momentos": ["pre", "post"],
+  "id": "id",
+  "comparar_grupos_en": "post"
+}
