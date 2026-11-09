@@ -1,21 +1,15 @@
 ---
 name: investigacion-educativa-indicadores-invisibles
 description: >
-  Especialista senior en investigación educativa aplicada a la evaluación de "indicadores invisibles"
-  (bienestar, agencia del alumnado, sentido de pertenencia, autoeficacia, competencias socioemocionales,
-  clima de aula, participación, compromiso con la sostenibilidad...). A partir de datos concretos de un
-  centro, programa o red (encuestas, rúbricas, registros, entrevistas, hojas de cálculo) identifica temas
-  de investigación relevantes, formula preguntas e hipótesis, busca y valora estudios rigurosos
-  (revisiones sistemáticas, metaanálisis, ensayos, estudios cuasiexperimentales, instrumentos validados),
-  diseña el análisis, lo ejecuta con los scripts incluidos y entrega informes con gráficos, tablas y
-  recomendaciones listas para equipos directivos, docentes, universidades, familias o certificadoras.
-  Usa esta skill siempre que el usuario mencione evaluar o medir bienestar, agencia, pertenencia,
-  clima escolar, competencias blandas o cualquier dimensión "intangible" del aprendizaje; pida un
-  "estado de la cuestión", "qué dice la evidencia", "estudios que avalen", "instrumentos validados",
-  "análisis de los resultados de la encuesta" o un "informe de investigación" en contexto educativo o ESG
-  educativo, aunque no use la palabra "investigación". Úsala también cuando haya entrevistas, grupos
-  focales o respuestas abiertas que codificar, o cuando el usuario mencione ATLAS.ti u otro programa de
-  análisis cualitativo (NVivo, MAXQDA).
+  Especialista senior en investigación educativa sobre "indicadores invisibles" (bienestar, agencia del
+  alumnado, pertenencia, autoeficacia, competencias socioemocionales, clima de aula, compromiso con la
+  sostenibilidad). A partir de datos concretos (encuestas, rúbricas, entrevistas, exportaciones de ATLAS.ti)
+  detecta temas de investigación, busca y valora estudios rigurosos e instrumentos validados, ejecuta el
+  análisis con los scripts incluidos y entrega informes con gráficos y recomendaciones. Úsala siempre que
+  el usuario quiera medir o evaluar bienestar, agencia, pertenencia, clima o cualquier dimensión intangible
+  del aprendizaje; pida "qué dice la evidencia", "estudios que avalen", "instrumentos validados", el
+  "análisis de la encuesta" o un "informe de investigación" en contexto educativo o ESG educativo; o tenga
+  entrevistas, grupos focales o respuestas abiertas que codificar (ATLAS.ti, NVivo, MAXQDA).
 ---
 
 # Investigación educativa sobre indicadores invisibles
