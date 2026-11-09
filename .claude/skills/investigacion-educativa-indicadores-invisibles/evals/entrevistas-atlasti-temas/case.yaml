@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: entrevistas-atlasti-temas
+expected_outcome: |
+  Se lee la exportación de ATLAS.ti (ignorando la hoja de información), se calculan frecuencias por código
+  contando documentos además de citas, se cruzan los códigos con curso y género (suprimiendo categorías con
+  menos de 5 documentos), se producen gráficos de presencia de códigos y de códigos por curso, y el informe
+  presenta los temas con 1-2 citas literales anonimizadas, conecta los resultados con literatura sobre
+  agencia del alumnado marcando el estado de verificación de cada fuente y evita generalizar más allá de
+  12 entrevistas.
+context:
+  scaffold_script: place-files.sh
